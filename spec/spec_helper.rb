@@ -23,7 +23,7 @@ Spork.prefork do
 
 		Rspec::Application.reload_routes!
 		config.include Rails.application.routes.url_helpers
-		#config.include MemberMacros, :type => :feature
+		config.include UserMacros, :type => :feature
 		config.fixture_path = "#{::Rails.root}/spec/fixtures"
 
 
